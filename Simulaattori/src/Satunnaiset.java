@@ -10,8 +10,6 @@ public class Satunnaiset {
         this.st = st;
     }
     
-    
-
     public void satunnainen() {
         int randomAika = random.nextInt(4) + 1;
         int randomStressi = random.nextInt(4) + 1;

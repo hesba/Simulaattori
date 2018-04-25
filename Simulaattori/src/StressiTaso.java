@@ -6,6 +6,12 @@ public class StressiTaso {
     public StressiTaso() {
     }
 
+    public int getTaso() {
+        return taso;
+    }
+    
+    
+
     public void lisääStressiä(int stressiTaso) {
         taso+=stressiTaso;
         System.out.println("Huoh.. Mikää ei onnaa.");
