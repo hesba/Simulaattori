@@ -33,14 +33,34 @@ public class Pommi {
         matka.getkulunutAika();
         while (true) {
             kuori();
-            sat.millonSatunnainen();
-            johto();
-            if (Aika.aika<=0) {
-                System.out.println("iffi sisäl");
+            if (Aika.aika <= 0) {
                 break;
             }
             sat.millonSatunnainen();
+            if (Aika.aika <= 0) {
+                break;
+            }
+            irrotus();
+            if (Aika.aika<=0) {
+                break;
+            }
+            sat.millonSatunnainen();
+            if (Aika.aika<=0) {
+                break;
+            }
+            johto();
+            if (Aika.aika <= 0) {
+                break;
+            }
+            sat.millonSatunnainen();
+            if (Aika.aika <= 0) {
+                break;
+            }
             räjähde();
+            if (Aika.aika <= 0) {
+                break;
+            }
+            break;
         }
     }
 
