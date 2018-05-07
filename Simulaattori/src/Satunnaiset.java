@@ -8,6 +8,7 @@ public class Satunnaiset {
     public Satunnaiset() {
     }
 
+    //Kertoo milloin tulee satunnainen ja milloin ei.
     public void millonSatunnainen() {
         int luku = random.nextInt(30) + 1;
         if (luku > 20) {
@@ -15,6 +16,8 @@ public class Satunnaiset {
         }
     }
 
+    
+    //satunnaiset tapahtumat
     public void satunnainen() {
         int randomAika = random.nextInt(8) + 1;
         int valinta = random.nextInt(60) + 1;

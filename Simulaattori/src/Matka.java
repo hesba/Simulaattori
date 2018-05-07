@@ -10,6 +10,7 @@ public class Matka {
     
     Random rand = new Random();
 
+    //Laskee randomilla paljon työpaikalta kestää pommipaikalle.
     public int getkulunutAika() {
         kulunutAika=rand.nextInt(18) + 5;
         Aika.vähennä(kulunutAika);

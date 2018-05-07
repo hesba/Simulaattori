@@ -14,16 +14,12 @@ public class Pommi {
         this.sat = sat;
         this.työpaikka = työpaikka;
     }
+    
+    //letsPlayssa tapahtuuu käytännössä koko pääohjelma.
 
     public void letsPlay() {
-        /*System.out.println("Pommissa aikaa jäljel: " + Aika.aika);
-        st.lisääStressiä(2);
-        st.lisääStressiä(3);
-        matka.getkulunutAika();
-        sat.satunnainen();
-        työpaikka.lisääTyökalu();*/
-
-        System.out.println("Olet pomminpurkaja. Pommin räjähtämiseen aikaa: " + Aika.aika + " minuuttia.");
+        System.out.println("Ohjelma simuloi tilanteen, jossa olet pomminpurkaja.");
+        System.out.println("Pommin räjähtämiseen aikaa: " + Aika.aika + " minuuttia.");
         System.out.println("Tehtävänäsi on valita mukaasi kolme (3) työkalua, jotka vaikuttavat purkuaikaan.");
         System.out.println("Saatat kohdata matkalla satunnaisia tapahtumia, jotka vievät aikaa.");
         System.out.println("ONNEA MATKAAN!");
@@ -32,7 +28,7 @@ public class Pommi {
         System.out.println(" ");
         System.out.println("Työkalut repussa ja saavuit pommipaikalle.");
         matka.getkulunutAika();
-        while (true) {
+        while (true) {     //Jos aikaa jäljellä niin while looppi menee loppuun asti, muuten se menee Aika.aika vähennä metodiin jossa aika loppuu ja pommi räjähtää.
             kuori();
             if (Aika.aika <= 0) {
                 break;

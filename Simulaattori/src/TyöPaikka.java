@@ -18,14 +18,18 @@ public class TyöPaikka {
         työkalut.add(new Työkalut("linkkari"));
     }
 
+    //Arpoo random työkalun (tätä käytetään silloin, kun halutaan tietää mikä työkalu on oikea missäkin vaiheessa pommia.
     public Työkalut arpooTyökalun() {
          return työkalut.get(random.nextInt(työkalut.size()));
 }
+    
+    //Palauttaa käyttäjän valitsemat työkalut
     public String omatTyökalut() {
         return tyhjälista.toString();
     }
     
     
+    //Kertoo mitä työkaluja on olemassa ja antaa käyttäjän valita haluamansa työkalut.
     public void lisääTyökalu() {
         System.out.println("Saatavilla olevat työkalut: " + työkalut.toString());
         while (tyhjälista.size() < 3) {
@@ -39,13 +43,13 @@ public class TyöPaikka {
                         tyhjälista.add(kalu);
                         System.out.println(tk+" lisätty reppuun. Repun sisältö: " +tyhjälista.toString());
                     }
-                    else {
+                    else { //Tarkistaa onko työkalu jo mukana
                         System.out.println(tk+" on jo repussa.");
                     }
                 }
                 
             }
-            if (onkoLöytynyt==false) {
+            if (onkoLöytynyt==false) { //Tarkistaa onko työkalu olemassa
                 System.out.println(tk+" ei ole työkalu. Työkalut: " +työkalut.toString());
             }
         }
