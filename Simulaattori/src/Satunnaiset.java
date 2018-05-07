@@ -27,10 +27,10 @@ public class Satunnaiset {
         }
 
         if (valinta == 2) {
-            System.out.println("Timo Soini takaa äännestyksen vilkkaan. Sanot Timo Soinille jotain tyhmää.");
+            System.out.println("Timo Soini takaa äänestyksen vilkkaan. Sanot Timo Soinille jotain tyhmää.");
             st.vähennäStressiä(randomStressi);
         } else {
-            System.out.println("Erä-Koira pyysi että sidot sen kengät, Iha vitu jepa.");
+            System.out.println("Erä-Koira pyysi että sidot sen kengät, Nättii!");
             System.out.println("Aikaa meni " + randomAika + " minuuttia.");
             Aika.vähennä(randomAika);
         }

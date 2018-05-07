@@ -36,10 +36,12 @@ public class Pommi {
             if (Aika.aika <= 0) {
                 break;
             }
+            System.out.println(" ");
             sat.millonSatunnainen();
             if (Aika.aika <= 0) {
                 break;
             }
+            System.out.println(" ");
             irrotus();
             if (Aika.aika<=0) {
                 break;
@@ -71,9 +73,9 @@ public class Pommi {
         if (työpaikka.omatTyökalut().contains(omaTyökalu.toString())) {
             System.out.println("Sinulta löytyi oikeat työkalu: " + omaTyökalu);
             Aika.vähennä(1);
-            System.out.println(omaTyökalu + " oli helkuti hyvä. Aikaa meni vain minuutti!");
+            System.out.println(omaTyökalu + " oli törkee hyvä. Aikaa meni vain minuutti!");
         } else {
-            System.out.println("Sul ei oo oikeet työkaluu! PERKELE!");
+            System.out.println("Sul ei oo oikeet työkaluu!");
             Aika.vähennä(5);
             System.out.println("Siul meni sörkkies 5 minuuttii.");
         }
