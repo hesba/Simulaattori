@@ -8,7 +8,7 @@ public class Simulaattori {
         TyöPaikka työpaikka = new TyöPaikka();
         Pommi pommi = new Pommi(matka, sat, työpaikka);
 
-        //NY MENNÄÄÄÄ!
+        //Ohjelma alkaa
         pommi.letsPlay();
     }
 }

@@ -1,6 +1,6 @@
 
 import java.util.*;
-
+//Luokan nimi TyöPaikka, koska työkalut sijaitsevat siellä.
 public class TyöPaikka {
 
     static Scanner lukija = new Scanner(System.in);
@@ -8,7 +8,7 @@ public class TyöPaikka {
     private ArrayList<Työkalut> työkalut;
     private ArrayList<Työkalut> tyhjälista;
 
-    public TyöPaikka() {
+    public TyöPaikka() { //työkalut, jotka olemassa
         this.työkalut = new ArrayList();
         this.tyhjälista = new ArrayList();
         työkalut.add(new Työkalut("vasara"));

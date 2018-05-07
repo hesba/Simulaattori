@@ -18,6 +18,8 @@ public class Pommi {
     //letsPlayssa tapahtuuu käytännössä koko pääohjelma.
 
     public void letsPlay() {
+        System.out.println("***************** PommiSimulaattori 2018 *****************");
+        System.out.println(" ");
         System.out.println("Ohjelma simuloi tilanteen, jossa olet pomminpurkaja.");
         System.out.println("Pommin räjähtämiseen aikaa: " + Aika.aika + " minuuttia.");
         System.out.println("Tehtävänäsi on valita mukaasi kolme (3) työkalua, jotka vaikuttavat purkuaikaan.");
