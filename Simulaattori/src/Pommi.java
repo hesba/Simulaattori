@@ -30,7 +30,7 @@ public class Pommi {
         System.out.println(" ");
         System.out.println("Työkalut repussa ja saavuit pommipaikalle.");
         matka.getkulunutAika();
-        while (true) {     //Jos aikaa jäljellä niin while looppi menee loppuun asti, muuten se menee Aika.aika vähennä metodiin jossa aika loppuu ja pommi räjähtää.
+        while (true) {     //Tsekkaa jokasen metodin välissä, että onko aikaa jäljellä. Jos ei ole simulaatio loppuu, muuten siirtyy seuraavaan vaiheeseen.
             kuori();
             if (Aika.aika <= 0) {
                 break;
