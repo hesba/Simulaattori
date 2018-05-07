@@ -11,7 +11,7 @@ public class Matka {
     Random rand = new Random();
 
     public int getkulunutAika() {
-        kulunutAika=rand.nextInt(20) + 5;
+        kulunutAika=rand.nextInt(18) + 5;
         Aika.vähennä(kulunutAika);
         System.out.println("Matkaan kului: " + kulunutAika + " minuuttia. Pommissa aikaa vielä jäljellä: " + Aika.aika + " minuuttia.");
         return kulunutAika;

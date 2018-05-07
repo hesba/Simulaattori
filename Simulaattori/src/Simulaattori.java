@@ -3,11 +3,10 @@ public class Simulaattori {
 
     public static void main(String[] args) {
 
-        StressiTaso st = new StressiTaso();
         Matka matka = new Matka();
-        Satunnaiset sat = new Satunnaiset(st);
+        Satunnaiset sat = new Satunnaiset();
         TyöPaikka työpaikka = new TyöPaikka();
-        Pommi pommi = new Pommi(st, matka, sat, työpaikka);
+        Pommi pommi = new Pommi(matka, sat, työpaikka);
 
         //NY MENNÄÄÄÄ!
         pommi.letsPlay();
